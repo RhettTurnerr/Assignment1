@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--<a href="./WorkInProgress.html">Work In progress</a>-->
+            <a href="./ContactMe.html">Contact</a>
+            <a href="./index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Me</h1>
+        <form action = "#" method = "get">
+            <div class = "form-row">
+                <label>
+                    Name: <input type="text" id="name" name="name" required>
+                </label>
+            </div>
+            
+            <div class = "form-row">
+                <label>
+                    Email: <input type = email id = email name = email required placeholder="Johnbagel@jmail.com">
+                </label>
+            </div>
+            
+            <div class = "form-row">
+                <label>
+                    Phone (format: XXX-XXX-XXXX):
+                    <input 
+                        type = tel 
+                        id = phone 
+                        name = phone 
+                        required
+                        placeholder="555-555-5555" 
+                        pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </label>
+            </div>
+            
+            <div class = "form-row">
+                <label>
+                    Message:
+                    <textarea name="message" id="message"></textarea>
+                </label>
+            </div>
+
+            <div class = "form-row">
+                <label>
+                    Gender:
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="NA">Prefer not to say</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class = "form-row">
+                <fieldset>
+                    <legend>What part of the website should be improved?</legend>
+
+                    <label for="Structure">Structure</label>
+                    <input type="radio" name = "improvFocus" value = "Structure" id = Structure>
+
+                    <label for="Design">Design</label>
+                    <input type="radio" name = "improvFocus" value = "Design" id = Design>
+                    
+                    <label for="EOA">Ease of Access</label>
+                    <input type="radio" name = "improvFocus" value = "EOA" id = EOA>
+                </fieldset>
+            </div>
+            
+            <div class = "form-row">
+                <label>
+                    Subscribe to our Newsletter:
+                    <input type = checkbox name = "request" value = "homework" id = homework>
+                </label>
+            </div>
+
+            <div class = "form-row">
+                <label>
+                    Rate our site:
+                    <input type="range" class = "siteRate" min = "0" max = "10" name = "siteRate" value="0">
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            
+        </form>
+    </main>
+</body>
+</html>
